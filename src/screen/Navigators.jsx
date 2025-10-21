@@ -3,6 +3,7 @@ import React from "react";
 import { Ionicons } from "@expo/vector-icons";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import HomeScreen from "./HomeScreen";
+import CartScreen from "./CartScreen";
 
 const Tab = createBottomTabNavigator();
 
@@ -30,7 +31,7 @@ export default function Navigators() {
           })}
         >
           <Tab.Screen name="HOME" component={HomeScreen} />
-          <Tab.Screen name="CART" component={HomeScreen} />
+          <Tab.Screen name="CART" component={CartScreen} />
           <Tab.Screen name="SETTING" component={HomeScreen} />
         </Tab.Navigator>
     </View>
